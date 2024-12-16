@@ -58,6 +58,7 @@ export class AppComponent {
   };
 
   onAvatarSaved(saveAvatar: SaveAvatar) {
+    console.log(saveAvatar.svg);
     localStorage.setItem('avatar', JSON.stringify(saveAvatar.avatarSelection));
   }
 }
